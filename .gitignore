@@ -1,2 +1,10 @@
-config/site.php
-files/cache/*
+.idea
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings
+.springBeans
+.DS_Store
+target
