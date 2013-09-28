@@ -4,6 +4,11 @@ public final class Carne extends Alimento {
 
 	private final String tipo = "Bovino";
 
+	@Override
+	public <V> V accept(AlimentoVisitor<V> visitor) {
+		return visitor.visit(this);
+	}
+
 	public Carne(String nome) {
 		super(nome);
 	}

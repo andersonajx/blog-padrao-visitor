@@ -9,11 +9,7 @@ public class Main {
 	}
 
 	public void prepararAlimento(Alimento alimento) {
-		if (alimento instanceof Vegetal) {
-			((Vegetal) alimento).temperar();
-		} else {
-			((Carne) alimento).assar();
-		}
+		alimento.accept(new PreparacaoAlimentoVisitor());
 	}
 
 }
